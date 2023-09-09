@@ -24,7 +24,7 @@ bool SceneAttachModel::Init()
 
     // 本体キャラにモデルをつける
     if(auto model = mouse->AddComponent<ComponentModel>()) {
-        model->Load("data/Sample/Player/model.mv1");
+        model->Load("data/Player/model.mv1");
         model->SetRotationAxisXYZ({0, 180, 0});
         model->SetAnimation({
             {"walk", "data/Sample/Player/Anim/Walk.mv1", 1, 1.0f}, // idle
