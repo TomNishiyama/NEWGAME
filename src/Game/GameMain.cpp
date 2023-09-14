@@ -32,4 +32,3 @@ void GameDraw()
 void GameExit()
 {
 }
-
