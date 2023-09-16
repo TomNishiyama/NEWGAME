@@ -31,8 +31,8 @@ void ComponentObjectController::Update()
         dir += {1, 0, 0};
 
     // 移動キーが押されているか?
+    // 斜めが押されていることを考慮し、
     if((float)length(dir) > 0.0f) {
-        // 斜めが押されていることを考慮し、
         // その方向の移動スピードを1とし、スピードを掛け合わせる
         dir = normalize(dir);
 

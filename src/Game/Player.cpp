@@ -48,8 +48,9 @@ bool Player::Init()
 
         //Animation
         model->SetAnimation({
-            {"idle",       "data/Player/Anim/playerIdle.mv1", 1, 1.0f},
-            {"walk", "data/Player/Anim/Crouched Walking.mv1", 1, 1.0f},
+            {"idle",            "data/Player/Anim/playerIdle.mv1", 1, 1.0f},
+            {"walk",      "data/Player/Anim/Crouched Walking.mv1", 1, 1.0f},
+            {"jump", "data/Player/Anim/Injured Standing Jump.mv1", 1, 1.0f},
         });
 
         obj->AddComponent<ComponentCollisionCapsule>()->SetRadius(2.5f)->SetHeight(13.0f)->UseGravity();
